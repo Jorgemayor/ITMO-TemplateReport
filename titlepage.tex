@@ -7,33 +7,39 @@
 \newcommand{\variant}{1922}
 \newcommand{\laboratorynumber}{2}
 \newcommand{\subject}{Основы профессиональной деятельности}
-\date{2022}
+\renewcommand{\date}{2022}
 
 \begin{titlepage}
     \begin{center}
-        \includegraphics{itmo.jpg}
+        {\includegraphics[width=0.4\textwidth]{itmo.jpg}\par}
         Санкт-Петербургский Национальный Исследовательский Университет Информационных
         Технологий Механики и Оптики Факультет Программной Инженерии и Компьютерной
         Техники\\
     \end{center}
+    
+    \vspace{\fill}
+    
     \begin{center}
         Вариант № \variant\\
         Лабораторная работа \laboratorynumber\\
         по дисциплине\\
         \subject
     \end{center}
+    
+    \vspace{\fill}
+    
     \begin{flushright}
-        \begin{tabular}{rl}
-            Преподаватель:  & \teacherlastname \teachername \\
+        \begin{tabular}{ r l }
+            Преподаватель:  & \teacherlastname{} \teachername \\
                             & \teacherpatronimic \\
             Выполнил:       & \studentname \\
             Группа:         & \group \\
         \end{tabular}
     \end{flushright}
 
-    \vspace{\fill}
+    \vspace{1em}
 	
 	\begin{center}
-		Санкт-Петербург \\\date
+		Санкт-Петербург \date{} г. \\
 	\end{center}
 \end{titlepage}
