@@ -4,8 +4,14 @@
 \usepackage[english,russian]{babel}
 \usepackage{geometry}
 \usepackage{graphicx}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
 
 \graphicspath{ {images/} }
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the sections and cites
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=black,citecolor=color1,linkcolor=color1,bookmarksopen=false}
 
 % Margins
 \geometry{left=2cm}
@@ -22,4 +28,5 @@
     \tableofcontents
     \newpage
     \input{description}
+    \input{bibliography}
 \end{document}
