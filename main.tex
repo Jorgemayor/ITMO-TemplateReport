@@ -1,0 +1,24 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+% Margins
+\geometry{left=2cm}
+\geometry{right=1.5cm}
+\geometry{top=1cm}
+\geometry{bottom=2cm}
+
+% Labels and refs in cyrillic
+\newcommand{\labelc}[1]{\label{\detokenize{\detokenize{#1}}}}
+\newcommand{\refc}[1]{\ref{\detokenize{#1}}}
+
+
+\begin{document}
+    \input{titlepage}
+    \tableofcontents
+\end{document}
