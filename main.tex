@@ -8,6 +8,10 @@
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
+% Remove section numbers
+\setcounter{secnumdepth}{0}
+
+% Images directory path
 \graphicspath{ {images/} }
 
 \definecolor{color1}{RGB}{0,0,90} % Color of the sections and cites
@@ -28,5 +32,7 @@
     \tableofcontents
     \newpage
     \input{description}
+    \input{solution}
+    \input{conclusion}
     \input{bibliography}
 \end{document}
