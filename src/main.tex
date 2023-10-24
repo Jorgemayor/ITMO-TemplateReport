@@ -7,6 +7,17 @@
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+\usepackage{minted} % For code blocks
+
+% Remove red boxes around russian chars in minted code blocks
+\usepackage{etoolbox}
+\makeatletter
+\AtBeginEnvironment{minted}{\dontdofcolorbox}
+\def\dontdofcolorbox{\renewcommand\fcolorbox[4][]{##4}}
+\makeatother
 
 % Remove section numbers
 \setcounter{secnumdepth}{0}
@@ -16,6 +27,8 @@
 
 \definecolor{color1}{RGB}{0,0,90} % Color of the sections and cites
 \hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=black,citecolor=color1,linkcolor=color1,bookmarksopen=false}
+
+\justifying
 
 % Margins
 \geometry{left=2cm}
